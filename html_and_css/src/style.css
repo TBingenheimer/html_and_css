@@ -61,9 +61,17 @@ body > header li a:hover{
   box-shadow:rgba(0,0,0,0.2) 5px 5px 5px;
   background-color:white;
   margin-bottom:10px;
+
+}
+
+@keyframes changeBox {
+  100% {box-shadow: rgba(0,0,0,0.4) 5px 5px 5px;}
 }
 #content article:hover{
-  box-shadow:rgba(0,0,0,0.4) 5px 5px 5px;
+  animation-name: changeBox;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 #contentwrap ul {
   padding-left:0;
